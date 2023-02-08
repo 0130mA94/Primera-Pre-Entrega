@@ -46,16 +46,17 @@ function Comic(editorial, nombre,edición,precio,cantidad,disponibilidad){
     this.edición = edición;
     this.precio = precio;
     this.cantidad = cantidad;
+    this.disponibilidad = disponibilidad;
 
     this.informar = function () {
         console.log("El comic " + this.nombre + " esta disponible, no olvides de reservarlo!");
     }
 }
 
-const comic1 = new Comic("Marvel Comics", "Amazing Spiderman: La última cacería de Kraven", "Must-Have", 14, 15);
-const comic2 = new Comic("DC", "Batman: Año Uno", "Black Label", 12, 20);
-const comic3 = new Comic("DC", "Batman: La corte de los buhos", "Deluxe", 20, 11 );
-const comic4 = new Comic("DC", "Batman: Death Metal","Black Label" ,12.50, 7 );
+const comic1 = new Comic("Marvel Comics", "Amazing Spiderman: La última cacería de Kraven", "Must-Have", 14, 15, "si");
+const comic2 = new Comic("DC", "Batman: Año Uno", "Black Label", 12, 20, "si");
+const comic3 = new Comic("DC", "Batman: La corte de los buhos", "Deluxe", 20, 11,"si" );
+const comic4 = new Comic("DC", "Batman: Death Metal","Black Label" ,12.50, 7,"si" );
 
 comic2.informar();
 
